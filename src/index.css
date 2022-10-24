@@ -11,3 +11,57 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+a {
+  text-decoration: none;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.App .actions_buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.App .actions_buttons button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  font-size: 35px;
+  background-color: transparent;
+}
+
+.App .actions_buttons button:active {
+  transform: scale(0.95);
+}
+
+.App .actions_buttons button:first-child,
+.App .actions_buttons button:last-child {
+  font-size: 20px;
+  width: max-content;
+  height: none;
+  height: unset;
+  border-radius: 0;
+  margin: auto;
+}
+
+.App h5 {
+  font-weight: initial;
+  color: gray;
+}
+
+.App h5 a {
+  font-weight: bold;
+  color: rgb(0, 162, 255);
+}
